@@ -7,8 +7,10 @@ on:
   # Triggers cuando haya un push o una solicitud de pull request en la rama "main" 
   push:
     branches: [ "main" ]
-  pull_request:
+    branches: [ "feature" ]
+    pull_request:
     branches: [ "main" ]
+    branches: [ "feature" ]
 
   # Permite que el workflow se ejecute manualmente desde la pestaña de Actions en GitHub
   workflow_dispatch:
